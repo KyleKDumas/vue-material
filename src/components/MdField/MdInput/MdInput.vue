@@ -4,6 +4,7 @@
     v-model="model"
     v-bind="attributes"
     v-on="listeners"
+    :placeholder="placeholder"
     @focus="onFocus"
     @blur="onBlur">
 </template>
@@ -25,6 +26,10 @@
       type: {
         type: String,
         default: 'text'
+      },
+      placeholder: {
+        type: String,
+        default: ''
       }
     },
     computed: {
